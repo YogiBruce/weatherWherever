@@ -11,3 +11,15 @@
 
 // WHEN I click on a city in the search history
 // THEN I am again presented with current and future conditions for that city
+var today = moment();
+var apiKey = "fa9deced30799df9282f5573c8325b98";
+var searchBar = document.querySelector("input");
+var city;
+
+function getCity(city){
+    city = ${"input"}.val()
+
+    var queryURL = 'https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={apiKey}';
+    appendHistory (city)
+
+}
