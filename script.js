@@ -71,6 +71,7 @@ function fiveDay(lat, lon) {
             var day1Wind = $("<p>").append("Windspeed: ", windSpeed, "mph");
             var iconImage = $("<img>").attr({src: iconUrl});
 
+            //Current day display
             $("#day1main").empty();
             $("#day1main").append(day1Temp);
             $("#day1main").append(day1Humidity);
@@ -79,15 +80,37 @@ function fiveDay(lat, lon) {
             $("#day1main").append(iconImage);
             $("#day1main").append(day1City);
 
+            //Current day forecast display
             $("#day1").empty();
             $("#day1").append(day1Temp);
             $("#day1").append(day1Humidity);
             $("#day1").append(day1Wind);
             $("#day1").append(today);
             $("#day1").append(iconImage);
+
+            //Day 2 forecast display
+            var temp2 = data.list[1].main.temp
+            var humidity2 = data.list[1].main.humidity
+            var windSpeed2 = data.list[1].wind.speed
+            var weatherIcon2 = data.list[1].weather[0].icon
+            var iconUrl2 = `https://openweathermap.org/img/w/${weatherIcon2}.png`
+
+            var day2Temp = $("<p").append("Temp: ", temp2, "°F" );
+            var day2Humidity = $("<p>").append("Humidity: ", humidity2, "%");
+            var day2Wind = $("<p>").append("Windspeed: ", windSpeed2, "mph");
+            var iconImage2 = $("<img>").attr({src: iconUrl2});
+
+            $("#day2").empty();
+            $("#day2").append(day2Temp);
+            $("day2").append(day2Humidity);
+            $("day2").append(day2Wind);
+            $("day2").append(iconImage2);
         })
 
 }
+
+$("#searchBtn").on("click", getCity)
+
 var title = $("<p>").text("5-day Weather Forecast")
 
 $("#currentDay").text(today.format("dddd, MMM Do, YYYY"));
