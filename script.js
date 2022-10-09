@@ -105,6 +105,42 @@ function fiveDay(lat, lon) {
             $("day2").append(day2Humidity);
             $("day2").append(day2Wind);
             $("day2").append(iconImage2);
+
+            //Day 3 forecast display
+            var temp3 = data.list[2].main.temp
+            var humidity3 = data.list[2].main.humidity
+            var windSpeed3 = data.list[2].wind.speed
+            var weatherIcon3 = data.list[2].weather[0].icon
+            var iconUrl3 = `https://openweathermap.org/img/w/${weatherIcon3}.png`
+
+            var day3Temp = $("<p").append("Temp: ", temp3, "°F" );
+            var day3Humidity = $("<p>").append("Humidity: ", humidity3, "%");
+            var day3Wind = $("<p>").append("Windspeed: ", windSpeed3, "mph");
+            var iconImage3 = $("<img>").attr({src: iconUrl3});
+
+            $("#day3").empty();
+            $("#day3").append(day3Temp);
+            $("day3").append(day3Humidity);
+            $("day3").append(day3Wind);
+            $("day3").append(iconImage3);
+
+            //Day 4 forecast display
+            var temp4 = data.list[3].main.temp
+            var humidity4 = data.list[3].main.humidity
+            var windSpeed4 = data.list[3].wind.speed
+            var weatherIcon4 = data.list[3].weather[0].icon
+            var iconUrl4 = `https://openweathermap.org/img/w/${weatherIcon4}.png`
+
+            var day4Temp = $("<p").append("Temp: ", temp4, "°F" );
+            var day4Humidity = $("<p>").append("Humidity: ", humidity4, "%");
+            var day4Wind = $("<p>").append("Windspeed: ", windSpeed4, "mph");
+            var iconImage4 = $("<img>").attr({src: iconUrl4});
+
+            $("#day4").empty();
+            $("#day4").append(day4Temp);
+            $("day4").append(day4Humidity);
+            $("day4").append(day4Wind);
+            $("day4").append(iconImage4);
         })
 
 }
