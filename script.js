@@ -141,6 +141,24 @@ function fiveDay(lat, lon) {
             $("day4").append(day4Humidity);
             $("day4").append(day4Wind);
             $("day4").append(iconImage4);
+
+            //Day 5 forecast display
+            var temp5 = data.list[4].main.temp
+            var humidity5 = data.list[4].main.humidity
+            var windSpeed5 = data.list[4].wind.speed
+            var weatherIcon5 = data.list[4].weather[0].icon
+            var iconUrl5 = `https://openweathermap.org/img/w/${weatherIcon5}.png`
+
+            var day5Temp = $("<p").append("Temp: ", temp5, "°F" );
+            var day5Humidity = $("<p>").append("Humidity: ", humidity5, "%");
+            var day5Wind = $("<p>").append("Windspeed: ", windSpeed5, "mph");
+            var iconImage5 = $("<img>").attr({src: iconUrl5});
+
+            $("#day5").empty();
+            $("#day5").append(day5Temp);
+            $("day5").append(day5Humidity);
+            $("day5").append(day5Wind);
+            $("day5").append(iconImage5);
         })
 
 }
