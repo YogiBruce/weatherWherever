@@ -15,25 +15,30 @@
 
 </head>
 
-<body>
+<body class="justify-content-center">
     <h1>Weather Whenever</h1>
-    <header></header>
+    <header class="col-12 jumbotron" id="currentDay"></header>
 
     <main class="row">
-       <aside>
+       <aside class="col-4 justify-content-center" id="history">
         <!--Submit city request-->
+        <input class="col-md-10" placeholder="Search Location">
+        <br>
+        <button class="col-md-10" id="searchBtn">SEARCH</button>
+        <br>
        </aside>
        
-       <section>
+       <section class="col-8 justify-content-center weatherFuture" id="day1">
         <!--Weather displayed here-->
        </section> 
        
        <div>
         <!--Forecast display block-->
-        <section class="" id="day2"></section>
-        <section class="" id="day3"></section>
-        <section class="" id="day4"></section>
-        <section class="" id="day5"></section>
+        <section class="col-2 forecast" id="day1"></section>
+        <section class="col-2 forecast" id="day2"></section>
+        <section class="col-2 forecast" id="day3"></section>
+        <section class="col-2 forecast" id="day4"></section>
+        <section class="col-2 forecast" id="day5"></section>
        </div>
 
     </main>
