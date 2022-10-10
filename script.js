@@ -26,7 +26,7 @@ function getCity(city) {
 //Display previous locations
 
 function appendHistory(city) {
-    var history = $("<div>").text(city).addClass("card")
+    var history = $("<div>").text(city).addClass("col s12 card")
     $("#history").append(history);
 }
 

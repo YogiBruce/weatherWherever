@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Combo&family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/style.css">
 
 
@@ -15,31 +15,34 @@
 
 </head>
 
-<body class="justify-content-center">
-    <h1>Weather Wherever</h1>
-    <header class="col-12 jumbotron" id="currentDay"></header>
+<body>
+    <h1 class="col s12 center-align flow-text">Weather Wherever</h1>
+    <header class="col s12 center-align jumbotron" id="currentDay"></header>
 
     <main class="row">
-        <aside class="col-4 justify-content-center" id="history">
+        <aside class="col s12 m4 l3 center-align" id="history" >
             <!--Submit city request-->
-            <input class="col-md-10" placeholder="Search Location">
+            <input class="col s12 input" placeholder="Search Location">
             <br>
-            <button class="col-md-10" id="searchBtn">SEARCH</button>
-            <br>
+            <button class="col s12 hoverable" id="searchBtn">SEARCH</button>
+            <div class="divider"></div>
+
         </aside>
-
-        <section class="col-8 justify-content-center weatherFuture" id="day1main">
-            <!--Weather displayed here-->
-        </section>
-
-        <div>
-            <!--Forecast display block-->
-            <section class="col-2 forecast" id="day1"></section>
-            <section class="col-2 forecast" id="day2"></section>
-            <section class="col-2 forecast" id="day3"></section>
-            <section class="col-2 forecast" id="day4"></section>
-            <section class="col-2 forecast" id="day5"></section>
+        <div class="container col s12 m8 l9 card-panel">
+            <section class="row s12 center-align valign-wrapper weatherFuture" id="day1main">
+                <!--Weather displayed here-->
+            </section>
+    
+            <div class="row center-align">
+                <!--Forecast display block-->
+                <section class="col s2 card-panel forecast" id="day1"></section>
+                <section class="col s3 card-panel forecast" id="day2"></section>
+                <section class="col s2 card-panel forecast" id="day3"></section>
+                <section class="col s3 card-panel forecast" id="day4"></section>
+                <section class="col s2 card-panel forecast" id="day5"></section>
+            </div>
         </div>
+        
 
     </main>
 

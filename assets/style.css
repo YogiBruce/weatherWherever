@@ -1,9 +1,10 @@
 body{
-
+    font-family: 'Lato', sans-serif;
+    background-color: #e8f9fd;
 }
 
 .jumbotron{
-
+    
 }
 
 aside{
@@ -26,11 +27,8 @@ section{
 
 }
 
-input, button, .card{
-
-}
-
 .card{
+    margin:10px;
 
 }
 
@@ -47,6 +45,8 @@ input, button, .card{
 }
 
 #searchBtn{
+    border-radius: 5px;
+    padding: 2px;
 
 }
 
