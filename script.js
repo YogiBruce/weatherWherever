@@ -8,7 +8,7 @@ var city;
 function getCity(city) {
     city = $("input").val()
 
-    var queryURL = `https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={apiKey}`;
+    var queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
     appendHistory(city)
 
     //Fetch info for city entered into locator.
