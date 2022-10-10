@@ -1,4 +1,4 @@
-# Weather Forever Forecast API App
+# Weather Wherever Forecast API App
 
 ## Table of Contents
 - [Description](#description)
