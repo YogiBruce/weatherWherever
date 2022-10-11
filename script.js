@@ -58,13 +58,13 @@ function fiveDay(lat, lon) {
             var iconImage = $("<img>").attr({ src: iconUrl });
 
             //Current day display
-            $("#day1main").empty();
-            $("#day1main").append(day1Temp);
-            $("#day1main").append(day1Humidity);
-            $("#day1main").append(day1Wind);
-            $("#day1main").append(today);
-            $("#day1main").append(iconImage);
-            $("#day1main").append(day1City);
+            $("#day1Main").empty();
+            $("#day1Main").append(day1Temp);
+            $("#day1Main").append(day1Humidity);
+            $("#day1Main").append(day1Wind);
+            $("#day1Main").append(today);
+            $("#day1Main").append(iconImage);
+            $("#day1Main").append(day1City);
 
             //Current day forecast display
             $("#day1").empty();

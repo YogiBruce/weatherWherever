@@ -28,16 +28,16 @@ section{
 }
 
 .card-panel{
-    margin:3px;
+    margin:2px;
 
 }
 
 #weatherDisplay{
-
+    width: 80vw;
 }
 
 .weatherFuture{
-
+    
 }
 
 #day1 {

@@ -19,7 +19,7 @@
     <h1 class="col s12 center-align flow-text">Weather Wherever</h1>
     <header class="col s12 center-align jumbotron" id="currentDay"></header>
 
-    <main class="row">
+    <main class="row container">
         <aside class="col s12 m4 l3 center-align" id="history" >
             <!--Submit city request-->
             <input class="col s12 input" placeholder="Search Location">
@@ -28,18 +28,18 @@
             <div class="divider"></div>
 
         </aside>
-        <div class="container col s12 m8 l9">
-            <section class="row s12 center-align valign-wrapper card-panel weatherFuture" id="day1main">
+        <div class="container col s12 m8 l9 weatherDisplay">
+            <section class="row center-align card-panel weatherFuture" id="day1Main">
                 <!--Weather displayed here-->
             </section>
     
             <div class="row center-align">
                 <!--Forecast display block-->
-                <section class="col s5 m2 l2 push-s1 push-m1 push-l1 card-panel forecast" id="day1"></section>
-                <section class="col s5 m2 l2 push-s1 push-m1 push-l1 card-panel forecast" id="day2"></section>
-                <section class="col s5 m2 l2 push-s1 push-m1 push-l1 card-panel forecast" id="day3"></section>
-                <section class="col s5 m2 l2 push-s1 push-m1 push-l1 card-panel forecast" id="day4"></section>
-                <section class="col s5 m2 l2 push-s3 push-m1 push-l1 card-panel forecast" id="day5"></section>
+                <section class="col  l2  push-l1 hide-on-small-only hide-on-med-only card-panel forecast" id="day1"></section>
+                <section class="col s5 l2 push-s1 push-l1 card-panel forecast" id="day2"></section>
+                <section class="col s5 l2 push-s1 push-l1 card-panel forecast" id="day3"></section>
+                <section class="col s5 l2 push-s1 push-l1 card-panel forecast" id="day4"></section>
+                <section class="col s5 l2 push-s1 push-l1 card-panel forecast" id="day5"></section>
             </div>
         </div>
         
