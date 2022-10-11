@@ -34,7 +34,7 @@ function appendHistory(city) {
 function fiveDay(lat, lon) {
     city = $("input").val()
 
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appleid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`)
         .then(function (response) {
             return response.json();
         })
