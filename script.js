@@ -1,6 +1,6 @@
 //Variables for global scope
 var today = moment();
-var apiKey = "fa9deced30799df9282f5573c8325b98";
+var apiKey = "a482eebcbf9ee83cb4294b628f9db685";
 var searchBar = document.querySelector("input");
 var city;
 
