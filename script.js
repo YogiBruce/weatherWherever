@@ -150,7 +150,7 @@ function fiveDay(lat, lon) {
 }
 
 //Initiate forecast with search button
-$("#searchBtn").on("click", getCity)
+$("#searchBtn").on("click", getCity);
 
 var title = $("<p>").text("5-day Weather Forecast")
 
