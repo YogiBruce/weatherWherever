@@ -40,10 +40,10 @@ function fiveDay(lat, lon) {
         })
         .then(function (data) {
             var today = moment().format('dddd');
-            // var day2Day = moment().add(1, 'days').format('dddd');
-            // var day3Day = moment().add(2, 'days').format('dddd');
-            // var day4Day = moment().add(3, 'days').format('dddd');
-            // var day5Day = moment().add(4, 'days').format('dddd');
+            var day2Day = moment().add(1, 'days').format('dddd');
+            var day3Day = moment().add(2, 'days').format('dddd');
+            var day4Day = moment().add(3, 'days').format('dddd');
+            var day5Day = moment().add(4, 'days').format('dddd');
 
             var temp = data.list[0].main.temp
             var humidity = data.list[0].main.humidity
@@ -81,7 +81,7 @@ function fiveDay(lat, lon) {
             var weatherIcon2 = data.list[1].weather[0].icon
             var iconUrl2 = `https://openweathermap.org/img/w/${weatherIcon2}.png`
 
-            var day2Temp = $("<p").append("Temp: ", temp2, "°F");
+            var day2Temp = $("<p>").append("Temp: ", temp2, "°F");
             var day2Humidity = $("<p>").append("Humidity: ", humidity2, "%");
             var day2Wind = $("<p>").append("Windspeed: ", windSpeed2, "mph");
             var iconImage2 = $("<img>").attr({ src: iconUrl2 });
@@ -99,7 +99,7 @@ function fiveDay(lat, lon) {
             var weatherIcon3 = data.list[2].weather[0].icon
             var iconUrl3 = `https://openweathermap.org/img/w/${weatherIcon3}.png`
 
-            var day3Temp = $("<p").append("Temp: ", temp3, "°F");
+            var day3Temp = $("<p>").append("Temp: ", temp3, "°F");
             var day3Humidity = $("<p>").append("Humidity: ", humidity3, "%");
             var day3Wind = $("<p>").append("Windspeed: ", windSpeed3, "mph");
             var iconImage3 = $("<img>").attr({ src: iconUrl3 });
@@ -117,7 +117,7 @@ function fiveDay(lat, lon) {
             var weatherIcon4 = data.list[3].weather[0].icon
             var iconUrl4 = `https://openweathermap.org/img/w/${weatherIcon4}.png`
 
-            var day4Temp = $("<p").append("Temp: ", temp4, "°F");
+            var day4Temp = $("<p>").append("Temp: ", temp4, "°F");
             var day4Humidity = $("<p>").append("Humidity: ", humidity4, "%");
             var day4Wind = $("<p>").append("Windspeed: ", windSpeed4, "mph");
             var iconImage4 = $("<img>").attr({ src: iconUrl4 });
@@ -135,7 +135,7 @@ function fiveDay(lat, lon) {
             var weatherIcon5 = data.list[4].weather[0].icon
             var iconUrl5 = `https://openweathermap.org/img/w/${weatherIcon5}.png`
 
-            var day5Temp = $("<p").append("Temp: ", temp5, "°F");
+            var day5Temp = $("<p>").append("Temp: ", temp5, "°F");
             var day5Humidity = $("<p>").append("Humidity: ", humidity5, "%");
             var day5Wind = $("<p>").append("Windspeed: ", windSpeed5, "mph");
             var iconImage5 = $("<img>").attr({ src: iconUrl5 });
