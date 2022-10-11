@@ -88,9 +88,10 @@ function fiveDay(lat, lon) {
 
             $("#day2").empty();
             $("#day2").append(day2Temp);
-            $("day2").append(day2Humidity);
-            $("day2").append(day2Wind);
-            $("day2").append(iconImage2);
+            $("#day2").append(day2Humidity);
+            $("#day2").append(day2Wind);
+            $("#day2").append(day2Day);
+            $("#day2").append(iconImage2);
 
             //Day 3 forecast display
             var temp3 = data.list[2].main.temp
@@ -106,9 +107,10 @@ function fiveDay(lat, lon) {
 
             $("#day3").empty();
             $("#day3").append(day3Temp);
-            $("day3").append(day3Humidity);
-            $("day3").append(day3Wind);
-            $("day3").append(iconImage3);
+            $("#day3").append(day3Humidity);
+            $("#day3").append(day3Wind);
+            $("#day3").append(day3Day);
+            $("#day3").append(iconImage3);
 
             //Day 4 forecast display
             var temp4 = data.list[3].main.temp
@@ -124,9 +126,10 @@ function fiveDay(lat, lon) {
 
             $("#day4").empty();
             $("#day4").append(day4Temp);
-            $("day4").append(day4Humidity);
-            $("day4").append(day4Wind);
-            $("day4").append(iconImage4);
+            $("#day4").append(day4Humidity);
+            $("#day4").append(day4Wind);
+            $("#day4").append(day4Day);
+            $("#day4").append(iconImage4);
 
             //Day 5 forecast display
             var temp5 = data.list[4].main.temp
@@ -142,9 +145,10 @@ function fiveDay(lat, lon) {
 
             $("#day5").empty();
             $("#day5").append(day5Temp);
-            $("day5").append(day5Humidity);
-            $("day5").append(day5Wind);
-            $("day5").append(iconImage5);
+            $("#day5").append(day5Humidity);
+            $("#day5").append(day5Wind);
+            $("#day5").append(day5Day);
+            $("#day5").append(iconImage5);
         })
 
 }
